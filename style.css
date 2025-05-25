@@ -1,0 +1,99 @@
+/* Modal Styles */
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image {
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+/* Favorite Heart */
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+.heart-icon.active {
+    opacity: 1;
+    color: red;
+}
+
+.flower-item {
+    position: relative;
+}
+
+/* Mobile Menu */
+#mobile-menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right.active {
+    display: flex !important;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+}
+
+.slideshow-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slideshow-nav.prev {
+    left: 10px;
+}
+
+.slideshow-nav.next {
+    right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #mobile-menu-toggle {
+        display: block;
+    }
+    
+    .nav-right:not(.active) {
+        display: none !important;
+    }
+}

@@ -1,0 +1,36 @@
+#parent {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    column-gap: 50px;
+}
+img {
+    border-radius: 50%;
+}
+.tags
+{
+    background-color: #006241;
+    padding: 15px;
+    outline: auto;
+    top: 0;
+    width: 10px;
+}
+
+.tag
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: sans-serif;
+    font-size: x-small;
+}
+
+.tag
+{
+   height: 10px;
+   width: 10px;
+   border-collapse: 10%;
+}
